@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .font-outline-2{
+        -webkit-text-stroke:white 2px ;
+    }
+}
+
+@layer components{
+    .primary-btn{
+        @apply inline-block bg-primary text-white cursor-pointer hover:bg-primary/80  rounded-lg
+        px-4 py-2 my-3;
+    }
+    .outline-btn{
+        @apply inline-block ring-2 ring-primary inset-0 text-slate-500 cursor-pointer hover:text-white hover:bg-primary/80  rounded-lg
+        px-4 py-2 my-3;
+    }
+    .social-btn{
+        @apply text-5xl hover:text-primary duration-200 cursor-pointer;
+    }
+    .page-shadown{
+        @apply shadow-[inset_0_0_8px_0_rgba(0,0,0,0.6),12px_12px_14px_rgba(0,0,0,0.9)];
+    }
+}
