@@ -8,6 +8,36 @@ import Services from './pages/MyServices/Services';
 import About from './pages/Abouts/About';
 import Projects from './pages/MyProjects/Projects';
 
+import Project1Img from '../assets/Projects/projet1.png'
+
+const ProjectData1= [
+    {
+        name:"Design Management",
+        description:"lorem upsum testxt aniat prosta videlitima pepto nuk",
+        image:Project1Img,
+        previewLink:"https://app.netlify.com/sites/design-management"
+    },
+    {
+        name:"Design Management",
+        description:"lorem upsum testxt aniat prosta videlitima pepto nuk",
+        image:Project1Img,
+        previewLink:"https://app.netlify.com/sites/design-management"
+    },
+]
+const ProjectData2= [
+    {
+        name:"Design Management",
+        description:"lorem upsum testxt aniat prosta videlitima pepto nuk",
+        image:Project1Img,
+        previewLink:"https://app.netlify.com/sites/design-management"
+    },
+    {
+        name:"Design Management",
+        description:"lorem upsum testxt aniat prosta videlitima pepto nuk",
+        image:Project1Img,
+        previewLink:"https://app.netlify.com/sites/design-management"
+    },
+]
 
 function MyBook(props) {
     return (
@@ -27,11 +57,14 @@ function MyBook(props) {
             <Page number={5}>
                 <About />
             </Page>
-            <Page number={5}>
-                <Projects />
+            <Page number={6}>
+                <Projects ProjectData={ProjectData1} />
             </Page>
-            <Page number={5}>
-                <About />
+            <Page number={7}>
+                <Projects ProjectData={ProjectData2} />
+            </Page>
+            <Page number={7}>
+                <Cover coverImg={ImgCover} title="Thank You !" />
             </Page>
         </HTMLFlipBook>
     );
